@@ -1,0 +1,27 @@
+<body>
+	{% extends "base.html" %}
+	{% load static %}
+	<!-- <link rel="stylesheet" href="{% static '/style.css' %}"> -->
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+	{% block title %}
+	Pastebins list
+	{% endblock title %}
+
+	{% block content %}
+	<h1> Pastebins list </h1>
+	{% if object_list.empty %}
+		<h2>No pastebins created</h2>
+	{% else %}
+		{% for obj in object_list %}
+		<a href="{{obj.get_absolute_url}}" class="card mb-3">
+			<div class="pasteTitle">{{obj.title}}</div>
+			<div class="pasteDate"><i class="fa fa-calendar"></i><b> Created:</b> {{obj.created}}</div>
+			<div class="pasteDate"><i class="fa fa-calendar"></i><b> Updated:</b> {{obj.updated}}</div>
+		</a>
+		{% endfor %}
+	{% endif %}
+	<a href="./pastebins/new">
+		<button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> New pastebin</button>
+	</a>
+	{% endblock content %}
+</body>

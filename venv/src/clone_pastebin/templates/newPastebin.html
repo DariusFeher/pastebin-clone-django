@@ -1,0 +1,23 @@
+<body>
+	{% extends "base.html" %}
+	{% load static %}
+	{% block title %}
+	Pastebins list
+	{% endblock title %}
+
+	{% block content %}
+    {% load crispy_forms_tags %}
+		<form action="" method="POST" class="card mb-3">
+			{% csrf_token %}
+			<div style="margin: 1%">
+				<h1> New Pastebin </h1>
+				{{form|crispy}}
+				<br>
+				<a href='/'>
+					<button type="button" class="btn btn-dark"><i class="fa fa-arrow-left"></i> Back</button>
+				</a>
+				<button type="submit" class="btn btn-success" value="PastebinClone"><i class="fa fa-save"></i> Save</button>
+			</div>
+		</form>
+	{% endblock content %}
+</body>
