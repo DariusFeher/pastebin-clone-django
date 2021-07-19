@@ -7,8 +7,6 @@ from django.views.generic import DetailView, ListView
 from .forms import PastebinForm
 from .models import PastebinClone
 
-# Create your views here.
-
 def clone_pastebin_create(request):
 	if request.method == "POST":
 		form = PastebinForm(request.POST)
@@ -57,7 +55,6 @@ def clone_pastebin_delete(request, pk):
 		pastebin.delete()
 		return redirect('/')
 	return render(request, 'main.html')
-
 
 class PastebinsView(ListView):
 	model = PastebinClone

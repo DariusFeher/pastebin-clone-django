@@ -6,7 +6,6 @@ h1 {
     font-family: 'Lobster', cursive;
 }
 
-
 a:visited, a:link, a:active {
     text-decoration: none;
     color: black;
@@ -16,14 +15,14 @@ a:hover {
     background-color: #d4d3d3;
 }
 
-.pasteTitle {
+.paste-title {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
     margin-left: 1%;
 }
 
-.pasteDate {
+.paste-date {
     color: rgb(59, 59, 59);
     font-family: 'Courier New', Courier, monospace;
     font-size: small;

@@ -8,8 +8,6 @@ from django.test import Client, TestCase
 from .forms import PastebinForm
 from .models import PastebinClone
 
-# Create your tests here.
-
 class TestViews(TestCase):
     
     def postPastebin(self):

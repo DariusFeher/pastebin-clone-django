@@ -23,7 +23,7 @@ class PastebinForm(forms.ModelForm):
       if title and len(title) < 3:
          self._errors['title'] = self.error_class(['A minimum of 3 characters is required'])
 
-      if body and len(body) < 8:
+      if body and len(body) < 3:
          self._errors['body'] = self.error_class(['Body length should not be less than 3 characters'])
 
       return self.cleaned_data

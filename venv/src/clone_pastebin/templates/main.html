@@ -14,9 +14,9 @@
 	{% else %}
 		{% for obj in object_list %}
 		<a href="{{obj.get_absolute_url}}" class="card mb-3">
-			<div class="pasteTitle">{{obj.title}}</div>
-			<div class="pasteDate"><i class="fa fa-calendar"></i><b> Created:</b> {{obj.created}}</div>
-			<div class="pasteDate"><i class="fa fa-calendar"></i><b> Updated:</b> {{obj.updated}}</div>
+			<div class="paste-title">{{obj.title}}</div>
+			<div class="paste-date"><i class="fa fa-calendar"></i><b> Created:</b> {{obj.created}}</div>
+			<div class="paste-date"><i class="fa fa-calendar"></i><b> Updated:</b> {{obj.updated}}</div>
 		</a>
 		{% endfor %}
 	{% endif %}
