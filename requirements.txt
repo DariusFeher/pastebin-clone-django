@@ -1,6 +1,7 @@
 asgiref==3.4.1
 Django==3.2.5
 django-crispy-forms==1.12.0
+django-widget-tweaks==1.4.8
+fontawesome-free==5.15.3
 pytz==2021.1
 sqlparse==0.4.1
-fontawesome-free==version_number

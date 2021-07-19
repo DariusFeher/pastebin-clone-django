@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # our apps
-    'clone_pastebin',
+    'pastes',
     # 3rd party
     'crispy_forms',
     'fontawesome_free',
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PastebinClone.urls'
+ROOT_URLCONF = 'pastes.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PastebinClone.wsgi.application'
+WSGI_APPLICATION = 'pastes.wsgi.application'
 
 
 # Database

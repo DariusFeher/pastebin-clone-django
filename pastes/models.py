@@ -17,10 +17,10 @@ class PastebinClone(models.Model):
 		return str(self.title)
 
 	def get_absolute_url(self):
-		return reverse('clone_pastebin:detail', kwargs={'pk' : self.pk})
+		return reverse('detail', kwargs={'pk' : self.pk})
 	
 	def get_delete_url(self):
-		return reverse('clone_pastebin:delete', kwargs={'pk' : self.pk})
+		return reverse('delete', kwargs={'pk' : self.pk})
 
 	def save(self, *args, **kwargs):
 		super(PastebinClone, self).save(*args, **kwargs)
